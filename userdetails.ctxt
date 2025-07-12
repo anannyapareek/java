@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=userdetails
+comment1.params=
+comment1.target=void\ user_details()
+comment2.params=
+comment2.target=void\ check_mobno()
+comment3.params=
+comment3.target=void\ customerdirectory()
+numComments=4

@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=packaging
+comment1.params=
+comment1.target=void\ input()
+comment2.params=
+comment2.target=void\ calculatePercentage()
+comment3.params=
+comment3.target=void\ afterwash()
+comment4.params=
+comment4.target=void\ extra_area()
+numComments=5

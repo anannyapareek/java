@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=tag
+comment1.params=
+comment1.target=void\ size()
+comment2.params=i
+comment2.target=void\ tag_requirements(int)
+numComments=3

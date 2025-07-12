@@ -1,0 +1,47 @@
+import java.util.*;
+import java.io.*;
+class costsheet
+{
+    String tt[][]=new String[3][6];
+    int happy;
+    void totalcost()
+    {
+        Scanner sc=new Scanner(System.in);
+        tt[0][0]="consumption rate";
+        tt[0][1]="Quantity";
+        tt[0][2]="Fabric/Stiching cost";
+        tt[0][3]="Printing cost";
+        tt[0][4]="tag/packaging cost";
+        tt[0][5]="total";
+        for(int i=0;i<4;i++)
+        {
+        System.out.println("Enter" +tt[0][i]);
+           tt[1][i]=sc.nextLine();
+        }
+    }
+    void creation() throws IOException
+    {
+        FileOutputStream FO=new FileOutputStream("CostSheet.dat",true);
+        DataOutputStream Do=new DataOutputStream(FO);
+        Scanner sc=new Scanner(System.in);
+        for(int i=0;i<6;i++)
+        {
+           Do.writeUTF(tt[0][i]);
+        }
+        for(int k=0;k<6;k++)
+        {
+            happy=Integer.parseInt(tt[1][k]);
+            Do.writeInt(happy);
+        }
+     Do.close();
+     FO.close();
+    }
+    void addition() throws IoException
+    {
+        FileInputSream FIS=new FileInputStream("CostSheet.dat");
+        DataInputStream DIS=new DataInputStream(FIS);
+        
+    }
+
+                
+    
